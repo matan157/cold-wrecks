@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Lato);@charset "UTF-8";
+@import url(https://fonts.googleapis.com/css?family=Lato);@import url(https://fonts.googleapis.com/css?family=Special+Elite);@charset "UTF-8";
 
 /*!
  * Bootstrap v3.3.7 (http://getbootstrap.com)
@@ -8352,16 +8352,26 @@ button.close {
 
 html,
 body {
+  font: 100% "Lato", sans-serif;
   height: 100%;
   width: 100%;
   margin: 0;
+  font-size: 14px;
 }
 
 body {
-  font: 100% "Lato", sans-serif;
-  font-size: 16px;
+  font-size: 1em;
   background-color: white;
   color: black;
+}
+
+footer {
+  font: 100% "Special Elite", cursive;
+  text-align: center;
+  width: 100%;
+  font-size: 0.8em;
+  position: fixed;
+  bottom: 0;
 }
 
 #maintenance {
@@ -8385,6 +8395,47 @@ body {
 }
 
 #maintenance #maintenance-logo {
-  max-width: 20%;
+  max-width: 60%;
+}
+
+@media (min-width: 992px) {
+  #maintenance #maintenance-logo {
+    max-width: 25%;
+  }
+}
+
+#maintenance .maintenance-flex-item {
+  width: 80%;
+  margin: 0 auto;
+}
+
+@media (min-width: 992px) {
+  #maintenance .maintenance-flex-item {
+    max-width: 50%;
+  }
+}
+
+#maintenance p {
+  font: 100% "Special Elite", cursive;
+  text-align: center;
+  width: 80%;
+}
+
+.video-embed {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 30px;
+  overflow: hidden;
+  height: 0;
+}
+
+.video-embed iframe,
+.video-embed object,
+.video-embed embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
